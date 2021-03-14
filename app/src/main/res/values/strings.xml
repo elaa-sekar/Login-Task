@@ -4,11 +4,12 @@
     <string name="login">Login</string>
     <string name="otp_info">
         <![CDATA[
-            we will send you <b>One Time Password</b> on your phone number<b>%s</b>.
+            We will send you <b>One Time Password</b> on your phone number<b>%s</b>.
         ]]>
     </string>
     <string name="mobile_number">Mobile number</string>
     <string name="code">+91| </string>
+    <string name="space">&#160;</string>
     <string name="numbers_only">0123456789</string>
     <string name="mobile_number_hint">Enter your mobile number</string>
     <string name="view_product_as_guest">View product as guest</string>

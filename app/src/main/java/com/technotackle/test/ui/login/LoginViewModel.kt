@@ -17,12 +17,12 @@ import timber.log.Timber
 import javax.inject.Inject
 
 @HiltViewModel
-class LoginViewModel @Inject constructor(val repository: LoginRepository) : ViewModel() {
+class LoginViewModel @Inject constructor(private val repository: LoginRepository) : ViewModel() {
 
     // Coroutine Error Handler
     private val coroutineExceptionHandler: CoroutineExceptionHandler =
         CoroutineExceptionHandler { _, throwable ->
-            Timber.d("Coroutine Exception - DiscussionPostViewModel: $throwable")
+            Timber.d("Coroutine Exception - LoginViewModel: $throwable")
             //            progressVisibility.set(View.GONE)
             //            triggerEvent(EventHandler.ProgressBar(false))
             triggerEvent(EventHandler.NotifyMessage(throwable.message.toString()))

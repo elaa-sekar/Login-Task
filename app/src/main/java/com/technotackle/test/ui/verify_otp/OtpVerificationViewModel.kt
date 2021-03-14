@@ -25,7 +25,7 @@ class OtpVerificationViewModel @Inject constructor(private val repository: OtpVe
     // Coroutine Error Handler
     private val coroutineExceptionHandler: CoroutineExceptionHandler =
         CoroutineExceptionHandler { _, throwable ->
-            Timber.d("Coroutine Exception - DiscussionPostViewModel: $throwable")
+            Timber.d("Coroutine Exception - OtpVerificationViewModel: $throwable")
 //            progressVisibility.set(View.GONE)
 //            triggerEvent(EventHandler.ProgressBar(false))
             triggerEvent(EventHandler.NotifyMessage(throwable.message.toString()))
