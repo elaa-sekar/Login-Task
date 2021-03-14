@@ -2,6 +2,7 @@ package com.technotackle.test.ui.verify_otp
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
@@ -47,5 +48,9 @@ class OtpVerificationActivity : AppCompatActivity() {
         binding.btnLogin.setOnClickListener {
             viewModel.validateAndVerifyOtp()
         }
+    }
+
+    fun onBackArrowClicked(view: View) {
+        finish()
     }
 }

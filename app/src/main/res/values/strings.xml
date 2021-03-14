@@ -17,5 +17,17 @@
     <string name="enter_otp">Enter Otp</string>
     <string name="lets_go">Let`s Go</string>
     <string name="otp_not_received_message">Did`t receive OTP? RESEND CODE</string>
+    <string name="welcome_text">
+        <![CDATA[
+            Welcome<br><b>%s</b>
+        ]]>
+    </string>
+    <string name="under_production">Under production</string>
+    <string name="complete_profile">Complete your profile</string>
+    
+    <!--    Menu-->
+    <string name="community">Community</string>
+    <string name="mind">Mind</string>
+    <string name="tools">Tools</string>
 
 </resources>

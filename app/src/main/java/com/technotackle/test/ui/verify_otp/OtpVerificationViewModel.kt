@@ -7,6 +7,7 @@ import com.technotackle.test.data.repositories.OtpVerificationRepository
 import com.technotackle.test.data.session.UserSession
 import com.technotackle.test.data.session.UserSession.getCustomerId
 import com.technotackle.test.util.LogicUtil
+import com.technotackle.test.util.LogicUtil.generateAuthToken
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.CoroutineExceptionHandler
 import kotlinx.coroutines.Dispatchers
@@ -72,7 +73,7 @@ class OtpVerificationViewModel @Inject constructor(private val repository: OtpVe
                 repository.verifyOtp(
                     getCustomerId(),
                     otp,
-                    LogicUtil.generateAuthToken("${getCustomerId()}$otp")
+                    generateAuthToken("${getCustomerId()}$otp")
                 )
             withContext(Dispatchers.Main) {
                 response.apply {
