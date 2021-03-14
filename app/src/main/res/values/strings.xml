@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Test App</string>
+
+    <string name="login">Login</string>
+    <string name="otp_info">
+        <![CDATA[
+            we will send you <b>One Time Password</b> on your phone number<b>%s</b>.
+        ]]>
+    </string>
+    <string name="mobile_number">Mobile number</string>
+    <string name="code">+91| </string>
+    <string name="numbers_only">0123456789</string>
+    <string name="mobile_number_hint">Enter your mobile number</string>
+    <string name="view_product_as_guest">View product as guest</string>
+    <string name="register_message">Don`t have an account? REGISTER NOW</string>
+    <string name="otp_confirmation">Otp Confirmation</string>
+    <string name="enter_otp">Enter Otp</string>
+    <string name="lets_go">Let`s Go</string>
+    <string name="otp_not_received_message">Did`t receive OTP? RESEND CODE</string>
+
+</resources>
